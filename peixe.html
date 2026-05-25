@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engenheiros da Pesca</title>
+    <link rel="stylesheet" href="pesca.css">
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #e8f4f8;
+            color: #1a1a1a;
+        }
+
+        header {
+            background-color: #0d3b6e;
+            color: white;
+            padding: 16px 24px;
+            margin-left: 120px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #titulo-box {
+            resize: both;
+            overflow: hidden;
+            display: inline-block;
+            min-width: 180px;
+            min-height: 36px;
+            border: 1px dashed rgba(255, 255, 255, 0.25);
+            padding: 2px 6px;
+            cursor: se-resize;
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        header nav {
+            margin-left: auto;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        .hero {
+            background-color: #0d3b6e;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 560px;
+            margin: 0 auto 24px;
+            color: #cce3ff;
+        }
+
+        .hero a.btn {
+            background-color: #f4a623;
+            color: #0d3b6e;
+            padding: 12px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 40px 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section h3 {
+            font-size: 1.4rem;
+            color: #0d3b6e;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f4a623;
+            padding-bottom: 6px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #d0d9e4;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 220px;
+            box-shadow: 0 20px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .card h4 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #0d3b6e;
+        }
+
+        .card p {
+            font-size: 0.88rem;
+            color: #555;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 10px;
+        }
+
+        .galeria-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .galeria-item p {
+            padding: 8px 10px;
+            font-size: 0.82rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0d3b6e;
+            color: #cce3ff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <p>&copy; 2025 Engenheiros da Pesca — feito com muito cafe</p>
+        <p>duvidas? manda email: joaopescador@gmail.com</p>
+    </footer>
+
+    <header>
+        <div id="titulo-box">
+            <h1 id="titulo-h1">🎣 Engenheiros da Pesca</h1>
+        </div>
+        <nav>
+            <a href="minecraft.html">Loja</a>
+            <a href="https://www.youtube.com">Espécies</a>
+            <a href="pagina_do_joao.html">Entrar</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Tudo para o Pescador Profissional</h2>
+        <p>Equipamentos, espécies e técnicas reunidos em um só lugar.</p>
+        <a href="rick_roll.html" class="btn">Ver Produtos</a>
+    </div>
+
+    <main>
+
+        <section>
+            <h3>Produtos em Destaque</h3>
+            <div class="cards">
+
+                <div class="card">
+                    <img src="imagens/piasagem verde.webp" alt="vara de pesca" />
+                    <h4>Vara de Pesca Pro 300</h4>
+                    <p>Vara carbono leve, ideal pra pescar qualquer coisa.</p>
+                    <p>R$ 189,90</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/sica de peixe.webp" alt="isca especial" />
+                    <h4>Isca Especial Aquática</h4>
+                    <p><b><i>Atrai qualquer peixe da região</i></b></p>
+                    <p>R$ 59,90</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/molinete de pesca.webp" alt="molinete" />
+                    <h4>Molinete Titan 2000</h4>
+                    <p>Resistente à água salgada e doce.</p>
+                    <p>R$ 349,00</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/drake.jpg" alt="kit iniciante" />
+                    <h4>Kit Pescador Iniciante</h4>
+                    <p>Tudo que você precisa pra começar a pescar.</p>
+                    <p>R$ 129,90</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h3>Espécies & Curiosidades</h3>
+            <div class="galeria">
+
+                <div class="galeria-item">
+                    <img src="imagens/pacu bonito.jfif" alt="Pacu" />
+                    <p>🐟 Pacu — clássico dos pesque-pagues</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagens/vaporeon kkj.jfif" alt="Vaporeon" />
+                    <p>💧 Vaporeon — espécie rara da região amazônica</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagens/tucunaré elegante.jpg" alt="Tucunaré" />
+                    <p>🎯 Tucunaré — predador do pantanal</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagens/DOGE.jpg" alt="meme pescaria" />
+                    <p>😭 Eu depois de 3h sem comer nada</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagens/piasagem denovo.jfif" alt="pescaria real" />
+                    <p>🌅 Pescaria ao amanhecer — o sonho</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagens/montanha pedra pedregulho.jpg" alt="paisagem" />
+                    <p>🏔️ Local de pesca top secreto (fica na montanha???)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h3>Sobre a Plataforma</h3>
+            <p>
+                O <strong>Engenheiros da Pesca</strong> é o melhor site de pesca do brasil
+                (pelo menos e o que o professor vai achar). Aqui você encontra equipamentos,
+                espécies, dicas e conteudo educativo em um único lugar.
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 60px 18px rgba(13,59,110,0.3)';
+                card.style.transition = 'all 0.2s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 2px 60px rgba(0,0,0,0.08)';
+            });
+        });
+
+        const box = document.getElementById('titulo-box');
+        const h1 = document.getElementById('titulo-h1');
+        const ro = new ResizeObserver(() => {
+            const largura = box.offsetWidth;
+            const novo = Math.max(14, Math.min(72, largura / 10));
+            h1.style.fontSize = novo + "px";
+        });
+        ro.observe(box);
+    </script>
+
+</body>
+
+</html>
